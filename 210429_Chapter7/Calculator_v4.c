@@ -30,7 +30,7 @@ int main()
 	while (1)
 	{
 		printf("----------------------------------\n");
-		printf("Calculator_v3\n");
+		printf("Calculator_v4\n");
 		printf("Created : 2021-04-29\n");
 		printf("Author : ¼­µ¿¿ì\n ");
 		printf("----------------------------------\n");
