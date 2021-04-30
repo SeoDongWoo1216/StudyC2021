@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="10-5.c">
+    <ClCompile Include="PointerExam.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
