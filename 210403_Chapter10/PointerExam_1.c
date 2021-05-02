@@ -11,18 +11,18 @@
 	ary[8] <-> ary[1]
 	ary[7] <-> ary[2]
 	ary[6] <-> ary[3]  식으로 저장된 값을 교환한다.
-	(방법 : 포인터 2개를 사용하여 0번방, 9번방을 가리킨다.)
 	
 	4. 데이터를 교환한 배열을 출력한다.
 	5. 함수이름
 	input_ary();
 	swap_ary();
 	print_ary();
+
+	6. 포인터가아닌 배열 자체를 바꾸는 방법으로 프로그램을 작성
 */
 
 void input_ary(int*, int);
-//void swap_ary(int *, int);
-void swap_ary(int*,int*, int);
+void swap_ary(int *, int);
 void print_ary(int*, int);
 
 int main() 
@@ -34,12 +34,11 @@ int main()
 
 	printf("\n");
 
-	// swap_ary(iAry, size);
-	swap_ary((iAry + 0), (iAry + size-1) ,size);
+	swap_ary(iAry, size);
 	print_ary(iAry, size);
 }
 
-void input_ary(int * piAry, int size)
+void input_ary(int* piAry, int size)
 {
 	int i;  // for문용 변수
 	printf("10개의 정수 배열 입력 : ");
@@ -49,24 +48,15 @@ void input_ary(int * piAry, int size)
 	}
 }
 
-void swap_ary(int* pa, int* pb ,int size) 
+void swap_ary(int* piAry ,int size) 
 {
 	int i;  // for문용 변수
 	int temp = 0;
-	/*for (i = 0; i < size/2; i++) 
+	for (i = 0; i < size/2; i++) 
 	{
 			temp = piAry[i];
 			piAry[i] = piAry[9 - i];   
 			piAry[9 - i] = temp;
-	}*/
-
-	for (i = 0; i < size / 2; i++)
-	{
-		temp = *pa;
-		*pa = *pb;
-		*pb = temp;
-		pa++;
-		pb--;
 	}
 }
 
