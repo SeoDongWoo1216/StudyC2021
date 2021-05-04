@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LottoProgram_v1.c">
+    <ClCompile Include="회문찾기_v1.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
