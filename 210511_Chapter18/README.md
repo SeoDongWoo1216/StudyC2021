@@ -156,12 +156,14 @@ int main()
 		{
 			break;
 		}
-		putchar(ch);     // 화면에 문자 출력
+		// putchar(ch);     // 화면에 문자 출력
 		fputc(ch, stdout);
 	}
 	return 0;
 }
 ```
+getchar() 함수는 내부적으로 stdin을 사용하여 표준 입력 스트림 파일의 버퍼를 통해 입력한다. <br>
+getchar함수가 처음 호출되면 키보드에서 입력하는 데이터는 개행 문자와 함께 stdin 스트림 파일의 버퍼에 한꺼번에 저장된다.<br>
 
 
 
