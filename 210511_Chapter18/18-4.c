@@ -21,7 +21,7 @@ int main()
 			break;
 		}
 		
-		//putchar(ch);     // 화면에 문자 출력
+		putchar(ch);     // 화면에 문자 출력
 		fputc(ch, stdout);
 	}
 	return 0;

@@ -21,16 +21,5 @@
     <ClInclude Include="예제_user.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="19-10_point.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="19-10_main.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="19-10_line.h">
-      <Filter>헤더 파일</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>
