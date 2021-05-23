@@ -2,8 +2,10 @@
 
 C언어 학습 리포지토리 <br><br>
 교재 : 혼자 공부하는 C언어 <br><br>
+각 링크의 리드미를 참조하세요 <br>
 
 --------------------------------------------------
+
 - [2. 상수와 데이터 출력](https://github.com/SeoDongWoo1216/StudyC2021/tree/main/210427_Chapter2)
 - [3. 변수와 데이터 입력](https://github.com/SeoDongWoo1216/StudyC2021/tree/main/210427_Chapter3)
 - [4. 연산자](https://github.com/SeoDongWoo1216/StudyC2021/tree/main/210428_Chapter4)
