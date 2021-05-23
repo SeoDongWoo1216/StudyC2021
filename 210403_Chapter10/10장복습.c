@@ -28,7 +28,7 @@ int main()
     printf("\n");
     for (i = 0; i < 5; i++)
     {
-        printf("ary[%d} = %d\t\n", i, *(pary + i));
+        printf("ary[%d] = %d\t\n", i, *(pary + i));
     }
 
     return 0;

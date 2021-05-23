@@ -6,12 +6,12 @@ int main() {
 
 	scanf("%c%c", &ch1, &ch2);  // 2개의 문자를 연속 입력
 
-	printf("[%c%c]", ch1, ch2);
-
+	printf("[%c%c]\n", ch1, ch2);
+	printf("%d, %d\n", ch1, ch2);
 	
-	int a, b;
-	scanf("%d %d", &a, &b);   // 이때 공백은 입력받는 a, b를 구분하는 용도로 사용.
-	printf("%d %d", a, b);
+	//int a, b;
+	//scanf("%d %d", &a, &b);   // 이때 공백은 입력받는 a, b를 구분하는 용도로 사용.
+	//printf("%d %d", a, b);
 
 	return 0;
 }
