@@ -18,5 +18,8 @@
     <ClCompile Include="대소문자판별 후 정렬해주는 프로그램.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="휘트니스 회원관리 프로그램.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
