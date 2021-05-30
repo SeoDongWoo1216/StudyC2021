@@ -30,6 +30,11 @@ int main()
 
 	Fitness* ary[100];    // 포인터 배열 선언
 
+
+
+	// 임시로 정보들을 입력받고, 그만큼 동적할당한다음에 구조체배열에 대입하는 걸로 다시짜보기
+
+
 	for (int i = 0; i < sizeof(ary) / sizeof(Fitness*); i++)
 	{
 		ary[i] = (Fitness*)malloc(sizeof(Fitness));    // 정보를 입력할때 동적할당
