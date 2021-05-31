@@ -67,6 +67,12 @@ int main()
 		}
 	}
 
+	if (lowerFlag == 0 && upperFlag == 0)
+	{
+		printf("\n알파벳을 입력하지 않으셨습니다. 종료합니다.\n");
+		exit(1);
+	}
+
 	// 소문자 배열의 삽입정렬
 	insertSort(lower_ary, k);
 
@@ -112,13 +118,15 @@ void insertSort(char* cAry, int count)
 /// </summary>
 void print_ary(char *cAry, int count, int Flag) 
 {
+	if (Flag == 0)
+	{
+		printf("배열이 존재하지 않습니다.\n");
+		return;
+	}
+
 	for (int i = 0; i < count; i++)
 	{
-		if (Flag == 0)
-		{
-			printf("배열이 존재하지 않습니다.\n");
-			break;
-		}
+		
 		printf("%c ", cAry[i]);
 	}
 }

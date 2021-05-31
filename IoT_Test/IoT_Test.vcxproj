@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="휘트니스 회원관리 프로그램.c" />
+    <ClCompile Include="대소문자판별 후 정렬해주는 프로그램.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
