@@ -7,9 +7,14 @@
 	scanf로 회원번호, 이름, 체중입력 한것을 heap 영역에 저장
 	회원번호에 음수를 입력하면 총 회원수, 평균 체중, 최고 체중을 갖는 회원의 정보 출력
 
+	구현 순서
 	1. 구조체선언
 	2. main에서 회원정보를 입력받고 입력받은 만큼의 메모리에 동적할당
 	3. 회원번호에서 -1을 입력했을때 회원정보가 뜨도록 구현
+
+	오류 제어
+	1. 아무것도 입력안하고 회원번호에 음수를 눌렀을때 => 아무것도 입력안했다고 출력하고 종료
+	2. 회원번호, 회원체중에 문자열을 입력했을때 => 숫자말고 딴거눌렀다고 출력하고 종료
 */
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -48,18 +53,32 @@ int main()
 		// 회원 정보 입력
 		printf("회원 번호 입력(음수를 입력하면 종료) : ");
 		scanf("%d", &tempNum);
-		if (tempNum < 0)
+		getchar();
+		if (1 != tempNum)                  // 숫자말고 딴거 입력했을때 오류 제어
+		{
+			printf("(회원번호입력)문자를 입력하셨습니다. 종료합니다.\n");
+			exit(1);
+		}
+		else if (tempNum < 0)
 		{
 			printf("음수를 입력하셨으니 종료합니다.\n");
 			break;
 		}
 
+		
 		printf("회원 이름 입력 : ");
-		scanf(" %s", tempName);
+		scanf("%s", tempName);
+		getchar();
 
 		printf("회원 체중 입력 : ");
 		scanf("%lf", &tempWeight);
+		getchar();
 
+		if (1 != tempWeight)               // 숫자말고 딴거 입력했을때 오류 제어
+		{
+			printf("(회원체중입력)문자를 입력하셨습니다. 종료합니다.\n");
+			exit(1);
+		}
 
 		// 입력받은 정보를 메모리에 동적할당
 		ary[i] = (Fitness*)malloc(sizeof(Fitness));        
