@@ -21,6 +21,12 @@
 	2. 각각 받은 배열들이 대소문자인지 구별(이때 대문자배열, 소문자배열에 저장)
 	3. 각각 배열을 삽입정렬로 정렬
 	4. 출력
+
+
+	오류 목록
+	1. 알파벳말고 딴거로만 채웠을때 => 알파벳 입력안했다고 출력하고 종료
+	2. 중복? => 일단 중복된채로 알파벳 정렬
+	3. 알파벳과 다른게 섞였을때 => 다른거 빼고 알파벳만 정렬해서 출력
 */
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -67,7 +73,7 @@ int main()
 		}
 	}
 
-	if (lowerFlag == 0 && upperFlag == 0)
+	if (lowerFlag == 0 && upperFlag == 0) // 알파벳말고 딴거로만 10개를 채우면 종료
 	{
 		printf("\n알파벳을 입력하지 않으셨습니다. 종료합니다.\n");
 		exit(1);
@@ -118,7 +124,7 @@ void insertSort(char* cAry, int count)
 /// </summary>
 void print_ary(char *cAry, int count, int Flag) 
 {
-	if (Flag == 0)
+	if (Flag == 0)  // 매개변수로 받은 배열의 요소가 없으면 없다고 출력하고 함수 반환
 	{
 		printf("배열이 존재하지 않습니다.\n");
 		return;
