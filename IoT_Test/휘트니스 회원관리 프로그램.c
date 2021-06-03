@@ -14,12 +14,13 @@
 
 	오류 제어
 	1. 아무것도 입력안하고 회원번호에 음수를 눌렀을때 => 아무것도 입력안했다고 출력하고 종료
-	2. 회원번호, 회원체중에 문자열을 입력했을때 => 숫자말고 딴거눌렀다고 출력하고 종료
+	2. 회원번호, 회원체중에 문자열을 입력했을때 => 실패
 */
 
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 typedef struct      // 구조체 선언
 {
@@ -54,17 +55,11 @@ int main()
 		printf("회원 번호 입력(음수를 입력하면 종료) : ");
 		scanf("%d", &tempNum);
 		getchar();
-		if (1 != tempNum)                  // 숫자말고 딴거 입력했을때 오류 제어
-		{
-			printf("(회원번호입력)문자를 입력하셨습니다. 종료합니다.\n");
-			exit(1);
-		}
-		else if (tempNum < 0)
+		if (tempNum < 0)
 		{
 			printf("음수를 입력하셨으니 종료합니다.\n");
 			break;
 		}
-
 		
 		printf("회원 이름 입력 : ");
 		scanf("%s", tempName);
@@ -73,12 +68,6 @@ int main()
 		printf("회원 체중 입력 : ");
 		scanf("%lf", &tempWeight);
 		getchar();
-
-		if (1 != tempWeight)               // 숫자말고 딴거 입력했을때 오류 제어
-		{
-			printf("(회원체중입력)문자를 입력하셨습니다. 종료합니다.\n");
-			exit(1);
-		}
 
 		// 입력받은 정보를 메모리에 동적할당
 		ary[i] = (Fitness*)malloc(sizeof(Fitness));        
@@ -225,10 +214,13 @@ void free_ary(Fitness** pary, int count)
 		printf("(free영역) 해제할 메모리가 없습니다.\n");
 		return;
 	}
+	
 	printf("\n");
+	printf("---------------------------\n");
 	for (int i = 0; i < count; i++)
 	{
 		printf("%d번 회원 할당해제\n", i);
 		free(pary[i]);
 	}
+	printf("---------------------------\n");
 }
