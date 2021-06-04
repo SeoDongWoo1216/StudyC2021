@@ -93,6 +93,7 @@ int main()
 
 	printf("\n\n-----------¼Ò¹®ÀÚ----------\n");
 	print_ary(lower_ary, k, lowerFlag);
+	printf("\n");
 
 	return 0;
 }
