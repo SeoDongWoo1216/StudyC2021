@@ -6,6 +6,7 @@ C언어 학습 리포지토리 <br><br>
 
 --------------------------------------------------
 
+## 학습
 - [2. 상수와 데이터 출력](https://github.com/SeoDongWoo1216/StudyC2021/tree/main/210427_Chapter2)
 - [3. 변수와 데이터 입력](https://github.com/SeoDongWoo1216/StudyC2021/tree/main/210427_Chapter3)
 - [4. 연산자](https://github.com/SeoDongWoo1216/StudyC2021/tree/main/210428_Chapter4)
@@ -24,3 +25,8 @@ C언어 학습 리포지토리 <br><br>
 - [17. 사용자 정의 자료형](https://github.com/SeoDongWoo1216/StudyC2021/tree/main/210507_Chapter17)
 - [18. 파일 입출력](https://github.com/SeoDongWoo1216/StudyC2021/tree/main/210511_Chapter18)
 - [19. 전처리와 분할 컴파일](https://github.com/SeoDongWoo1216/StudyC2021/tree/main/210511_Chapter19)
+
+--------------
+## [실습](https://github.com/SeoDongWoo1216/StudyC2021/tree/main/IoT_Test)
+- 콘솔을 이용한 피트니스 회원관리 프로그램
+- 알파벳 대소문자 정렬
